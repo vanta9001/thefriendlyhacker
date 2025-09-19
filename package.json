@@ -1,0 +1,21 @@
+{
+  "name": "invidious-redirect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "build": "node src/build.js",
+    "watch": "fish -c 'while true; npm run build; inotifywait (find src -type f) -e close_write -q; end'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0-only",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "http-server": "^0.12.3",
+    "pug": "^3.0.0",
+    "sass": "^1.26.10"
+  }
+}
