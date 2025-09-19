@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn {
+      background: #fff;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #444;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      color: #222;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Website Hub</h1>
+  <div class="button-container">
+    <a href="https://doralacademy.vercel.app" target="_blank"><div class="btn">School Website (Spongebob)</div></a>
+    <a href="https://colegianew.vercel.app" target="_blank"><div class="btn">Colegia (JJK)</div></a>
+    <a href="https://doralmao.vercel.app" target="_blank"><div class="btn">Springssoft (McDonalds)</div></a>
+    <a href="https://wayground.vercel.app" target="_blank"><div class="btn">Quizizz (Demon Slayer)</div></a>
+    <a href="https://famat.vercel.app" target="_blank"><div class="btn">Famat (Initial D)</div></a>
+    <a href="https://mualphatheta.vercel.app" target="_blank"><div class="btn">MAO (F1)</div></a>
+    <a href="https://carnegielearning.vercel.app" target="_blank"><div class="btn">Carnegie (Hello Kitty)</div></a>
+    <a href="https://mymathlab.vercel.app" target="_blank"><div class="btn">Pearson (Rick and Morty)</div></a>
+    <a href="https://artofproblemsolving.vercel.app" target="_blank"><div class="btn">Art of Problem Solving (Gravity Falls)</div></a>
+    <a href="https://wspeed.vercel.app" target="_blank"><div class="btn">W Speed</div></a>
+  </div>
+</body>
+</html>
