@@ -66,18 +66,24 @@
     footer {
       margin-top: 2rem;
       text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
     }
 
-    footer a {
-      color: #aaa;
-      margin: 0 0.8rem;
-      transition: color 0.3s ease;
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
     }
 
-    footer a:hover {
-      color: #fff;
+    .social-links a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .social-links a img:hover {
+      transform: scale(1.2);
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -97,10 +103,11 @@
   </div>
 
   <footer>
-    <p>Follow me:</p>
-    <a href="https://instagram.com/bogdanzogovic123" target="_blank">Instagram</a>
-    <a href="https://www.threads.net/@bogdanzogovic123" target="_blank">Threads</a>
-    <a href="https://github.com/vanta9001" target="_blank">GitHub</a>
+    <div class="social-links">
+      <a href="https://instagram.com/bogdanzogovic123" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://www.threads.net/@bogdanzogovic123" target="_blank"><img src="threads.png" alt="Threads"></a>
+      <a href="https://github.com/vanta9001" target="_blank"><img src="github.png" alt="GitHub"></a>
+    </div>
   </footer>
 </body>
 </html>
